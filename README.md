@@ -4,13 +4,11 @@
 This project builds a **factor-based equity index** using NSE large and mid-cap stocks.
 The index selects financially strong companies using **quality (ROE, Debt)** and **momentum factors**, and evaluates performance against the NIFTY 50 benchmark.
 
----
 
 ## Objective
 
 To construct a **rule-based, investable portfolio** of high-quality companies that aims to deliver **better risk-adjusted returns** than the benchmark.
 
----
 
 ## Methodology
 
@@ -20,7 +18,6 @@ To construct a **rule-based, investable portfolio** of high-quality companies th
 * Fundamentals: ROE, Debt-to-Equity dataset
 * Universe: NSE Large & Mid-cap stocks
 
----
 
 ### 2. Data Preprocessing
 
@@ -28,7 +25,6 @@ To construct a **rule-based, investable portfolio** of high-quality companies th
 * Removed stocks with insufficient data
 * Aligned price and fundamental datasets
 
----
 
 ### 3. Filtering Criteria
 
@@ -36,7 +32,6 @@ To construct a **rule-based, investable portfolio** of high-quality companies th
 * Debt-to-Equity ≤ 5
 * ADTV ≥ ₹3 Crore
 
----
 
 ### 4. Ranking (Multi-Factor Model)
 
@@ -48,14 +43,12 @@ Stocks are ranked using:
 
 **Composite Score = ROE Rank + Debt Rank + Momentum Rank**
 
----
 
 ### 5. Stock Selection
 
 * Top ~20 stocks selected (range: 15–25)
 * Ensures flexibility and quality
 
----
 
 ### 6. Portfolio Construction
 
@@ -63,7 +56,6 @@ Stocks are ranked using:
 * Reduces concentration risk
 * Improves diversification
 
----
 
 ### 7. Rebalancing
 
@@ -71,7 +63,6 @@ Stocks are ranked using:
 * Reapply filters and rankings
 * Reset weights
 
----
 
 ### 8. Performance Metrics
 
@@ -82,7 +73,6 @@ Stocks are ranked using:
 * Maximum Drawdown
 * Turnover
 
----
 
 ## Key Results
 
@@ -97,7 +87,6 @@ Stocks are ranked using:
 | Maximum Drawdown (%)            | **-18.12%** | **-17.23%** |
 | Avg. Turnover per Rebalance (%) | **35.67%**  | —           |
 
----
 
 ## Interpretation
 
@@ -106,8 +95,6 @@ Stocks are ranked using:
 * Volatility is moderately higher due to active stock selection
 * Maximum drawdown is comparable, showing controlled downside risk
 * Turnover (~35.7%) reflects an actively managed and dynamically rebalanced portfolio
-
----
 
 ## Sensitivity Analysis
 
@@ -119,8 +106,6 @@ Compared:
 
 * Equal weighting provided better diversification and lower volatility
 
----
-
 ## Advantages
 
 * Data-driven and rule-based approach
@@ -128,7 +113,6 @@ Compared:
 * Diversified portfolio construction
 * Dynamic quarterly rebalancing
 
----
 
 ## Limitations
 
@@ -137,7 +121,6 @@ Compared:
 * Dependence on data quality
 * Momentum factor may underperform in volatile markets
 
----
 
 ## Tech Stack
 
@@ -147,7 +130,6 @@ Compared:
 * Matplotlib
 * yfinance
 
----
 
 ## Conclusion
 
